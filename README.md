@@ -14,7 +14,12 @@ This project focuses on anomaly classification using the Mamba2 architecture on 
 2. Run the `Rdata_to_csv_converter.py` if you need to convert `.rdata` files to `.csv`.
 3. Open `notebooks/mamba_anomaly_classification.ipynb` to view the training process or train the model.
 
+
+## Detection Rate
+![Detection Rate](images/detection_rate.png)
+
 ## Future Improvements to the Model
+
 To further improve performance, the following steps are recommended:
 
 1. **Input Augmentation with Derivatives**: 
