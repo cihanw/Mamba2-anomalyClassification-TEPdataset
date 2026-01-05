@@ -9,6 +9,21 @@ This project focuses on anomaly classification using the Mamba2 architecture on 
 - `scripts/`: Helper scripts, including data conversion tools (`Rdata_to_csv_converter.py`).
 - `models/`: Trained model files (`mamba_model.pth`).
 
+## Model Architecture
+The model consists of 4 fixed-size Mamba blocks.
+
+### Configuration Parameters
+| Parameter | Value |
+|-----------|-------|
+| window_length | 128 |
+| batch_size | 64 |
+| d_state | 64 |
+| n_layers | 4 |
+| learning_rate | 5e-4 |
+| dropout | 0.25 |
+| num_classes | 21 |
+| dmodel | 48 |
+
 ## Usage
 1. Ensure your data is placed in the `data/` directory.
 2. Run the `Rdata_to_csv_converter.py` if you need to convert `.rdata` files to `.csv`.
@@ -16,7 +31,7 @@ This project focuses on anomaly classification using the Mamba2 architecture on 
 
 
 ## Detection Rate
-![Detection Rate](images/detection_rate.png)
+![Detection Rate](images/detectionRate.png)
 
 ## Future Improvements to the Model
 
